@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Menu */
+.c-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    /* top: 0;
+    left: 0;*/
+    /* z-index: 99;  */
+    
+}
+.c-header header{
+    max-width:100% ;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+}
+ .Dev_Por  a{
+ font-family: 'Righteaous';
+ font-size: 32px;
+ color:#1CB698;
+text-decoration: none;
+}
+.Dev_Por a span{
+    color: #fff;
+}
+nav ul{
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* gap: 40px; */
+    list-style: none;
+}
+nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 25px;
+    padding: 3px;
+    text-decoration: none;
+    transition: .5s;
+}
+ul li a.active,nav ul li a:hover{
+    color: #1CB698;
+}
+.responsive{
+    background-color:#1CB698 ;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/*Section Inforamation Etudient */
+.info{
+    background: linear-gradient(to top,rgba(111, 115, 117, 0.8),rgba(30,35,38,1)),
+    url(/img/photo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.info .container{
+padding: 20px;
+/* background-color:#1e2326; */
+max-width: 550px;
+margin: auto;
+text-align: center;
+border-radius:40px;
+opacity: 0.8;
+}
+.info .container img{
+    margin-top: 40px;
+    border: 10px solid #1CB698;
+    /* border-radius: 100%; */
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+.info .container h1{
+    margin-top: 40 px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.info .container h2{
+    margin-top: 40 px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.info .container .icons a{
+/* margin-top: 10px; */
+color: #fff;
+display: inline-block;
+text-decoration: none;
+border: 1px solid #fff;
+border-radius:100% ;
+width: 30px;
+height: 30px;
+line-height: 30px;
+margin: 10px 5px;
+transition:.3s ;
+}
+.info .container .icons a:hover{
+    background-color: #1CB698;
+}
+/*     <!-- Inofo About --> */
+
+.about{
+ background-color:#1e2326;
+    height: 80vh;
+    color: #fff;
+
+}
+.about h2{
+    padding: 40px 0;
+    font-size: 40px;
+    font-weight: normal;
+     text-align: center;
+     font-family: 'Righteous';
+}
+.about h2 span{
+    color: #1CB698;
+   
+}
+.about .container{
+    margin-top: 2%;
+     display: flex;
+     justify-content: space-around;
+ 
+}
+.about .container .left{
+   
+    width: 40%; 
+  
+    
+}
+.about .container .left img{
+width: 400px;
+height: 250px;
+}
+.about .container .right{
+    margin-right: 2%;
+     padding: 30px 0;
+    width: 40%;
+}
+.about .container .right h3 {
+     padding-bottom: 30px;
+}
+.about .container .right h3 span{
+    color: #1CB698;
+   font-weight: bold;
+}
+.about .container .right p{
+    /* spacein  paragraphe*/
+    line-height: 32px;
+}
+/* Formation /deplom */
+.form{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0;
+    height: 80vh;
+
+
+}
+.form .container_form{
+    max-width: 1200px;
+    margin: auto;
+
+}
+.form h2{
+    font-size: 40px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 25px 0;
+}
+.form h2 span{
+  color: #1CB698;
+}
+.form .deperso{
+    display: flex;
+  
+}
+.form .deperso .col{
+    width: 50%;
+ 
+}
+.form .deperso .col h3{
+    font-size: 28px;
+    font-family:'Works' ;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.form .deperso .col ul{
+   list-style: none;
+  padding-left: 17%;
+  
+}
+.form .deperso .col  li{
+    margin: 12px 0;
+    padding-left: 23px;
+}
+.form .deperso .col  li strong{
+    display: inline-block;
+    color:#1CB698;
+width: 90px;
+}
+.form .deperso .col  li p{
+font-size: 15px;
+font-weight: bold;
+}
+
+
+/* Compentance */
+.comp{
+    background-color:#1e2326;
+    height: 90vh;
+    color: #fff;
+}
+.comp h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Righteous';
+
+    padding:40px 0;
+}
+.comp .container_comp{
+width:100% ;
+margin: auto;
+}
+.comp .container_comp .cards{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    align-items: center;
+ 
+
+}
+.comp .container_comp .cards .card{
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    padding: 35px 0;
+    background-color: #fff;
+    border-radius: 15px;
+    
+
+
+}
+.comp .container_comp .cards .card i{
+    font-size: 50px;
+    padding-bottom: 8px;
+    color: #1e2326;
+}
+.comp .container_comp .cards .card h2{
+    font-family: 'Works';
+    color: #1CB698;
+    /* font-weight: bold; */
+    font-style: italic;
+    padding-bottom: 15px;
+    /* letter-spacing: 2.5px; */
+}
+.comp .container_comp .cards .card p{
+    font-size: 15px;
+    color:#1e2326;
+    line-height:  25px;
+}
+/* Logiciel */
+.logiciel{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0;
+
+}
+.logiciel .container_log{
+        width:100% ;
+        margin: auto;
+}
+.logiciel h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Righteous';
+    padding-bottom: 20px;
+   
+}.logiciel h2 span{
+   color: #1CB698;
+   
+}
+.logiciel .container_log{
+    width:100% ;
+margin: auto;
+display: flex;
+justify-content: space-around;
+
+}
+.logiciel .container_log .app{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 5px;
+ flex-wrap: wrap;
+ width: 45%;
+
+}
+.logiciel .container_log .interet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    width: 45%;
+   }
+   .logiciel .container_log .app .card{
+    width: 100px;
+    height: 100px;
+    background-color:#1e2326;
+    border-radius: 10px;
+    margin: 0  20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    
+   }
+   .logiciel .container_log .interet .card{
+    width: 100px;
+    height: 100px;
+    background-color:#1e2326;
+    border-radius: 10px;
+    margin: 0  20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+   }
+   .logiciel .container_log .app .card:hover{
+    color: #1CB698;
+   }
+   .logiciel .container_log .interet .card:hover{
+    color: #1CB698;
+   }
+   .logiciel .container_log .app .card i{
+    font-size: 32px;
+    padding-bottom: 10px;
+   }
+   .logiciel .container_log .interet .card i{
+    font-size: 32px;
+    padding-bottom: 10px;
+   }
+/* Foooter */
+   footer{
+    width: 100%;
+    height: 50%;
+    background-color: #3c6382;
+  }
+  .fot{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-direction: column; */
+    margin-left: 6%;
+    text-align: center;
+   
+  }
+  
+  .lef{
+   padding-top: 20px;
+   padding-bottom: 30px;
+   margin-right: 12%;
+  }
+  .reg{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-right: 35%;
+  }
+  .lef  h3{
+    text-decoration-line: underline;
+    color: white;
+  }
+  .lef  h3:hover{
+    color: #1CB698;
+  }
+  .reg  h3{
+    text-decoration-line: underline;
+    color: white;
+  }
+  .reg h3:hover{
+    color: #1CB698;
+  }
+
+    footer .fot2  .icons a{
+        /* margin-top: 10px; */
+        color: #fff;
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid #fff;
+        border-radius:10% ;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin: 10px 5px;
+        transition:.3s ;
+        }
+        footer .fot2  .icons a:hover{
+            background-color: #1CB698;
+        }
+ 
+
+  .fot2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-right: 8%; */
+  }
+  .ser{
+    padding-right: 12%;
+    /* padding-bottom: 30px; */
+    
+  }
+  .email{
+    padding: 7px 80px  5px 15px;
+  }
+  .sub{
+    border: none;
+    padding: 9px 50px 7px 30px;
+    background: #000;
+    color: white;
+    margin-right: 12px;
+
+  }
+  .cop{
+    width: 100%;
+    background: #000;
+    text-align: center;
+    height: 35px;
+    padding: 12px;
+    font-size: 12px;
+    color: #1CB698;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+

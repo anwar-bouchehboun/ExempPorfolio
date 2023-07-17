@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Menu */
+.c-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    /* top: 0;
+    left: 0;*/
+    /* z-index: 99;  */
+    
+}
+.c-header header{
+    max-width:100% ;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+nav ul{
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* gap: 40px; */
+    list-style: none;
+}
+.Dev_Por  a{
+    font-family: 'Righteaous';
+    font-size: 32px;
+    color:#1CB698;
+   text-decoration: none;
+   }
+   .Dev_Por a span{
+       color: #fff;
+   }
+nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 25px;
+    padding: 3px;
+    text-decoration: none;
+    transition: .5s;
+}
+ul li a.active,nav ul li a:hover{
+    color: #1CB698;
+}
+.responsive{
+    background-color:#1CB698 ;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* portfolio */
+/* section{
+  
+} */
+.portfolio{
+    min-height: 100vh;
+    /* padding: 10rem 9% 2rem;
+    height: 100vh; */
+    display: flex;
+    background: linear-gradient(to top,rgba(111, 115, 117, 0.8),rgba(30,35,38,1)),
+    url(/img/photo.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+   
+}  
+.portf_content{
+    max-width: 50rem;
+    padding: 0 50px;
+}
+.portf_content h1{
+    font-size: 56px;
+    font-weight: 700;
+    font-family: 'Lilita One';
+    line-height: 1.3;
+    color: #FFF;
+}
+.portf_content h1 span{
+    color: #1CB698;
+}
+.portf_content .text-animate{
+position: relative;
+width: 32.8rem;
+}
+.portf_content .text-animate h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1CB698;
+    /* -webkit-text-stroke: 2px #1CB698; */
+    text-transform: uppercase;
+    /* font-family: 'Work'; */
+}
+.portf_content p{
+    font-size: 16px;
+    line-height: 32px;
+}
+.portf_content .icons a{
+    line-height: 30px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    margin: 10px 5px;
+    color: #fff;
+    border: 1px solid #fff;
+   border-radius: 100%;
+   text-align: center;
+}
+.portf_content .icons a i{
+    font-size: 16px;
+}
+.portf_content .icons a:hover{
+background-color:#1CB698 ;
+}
+.home-imgove{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: 100%; */
+   
+   
+}
+.home-imgove img{
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    border:  3px solid #1CB698;
+      opacity: .7; 
+}
+
+/* Projet */
+.projet{
+    background: #1e2326;
+    min-height: 100vh;
+
+    /* padding: 10rem 9% 2rem;  */
+}
+
+.projet h2{
+    padding: 40px 0;
+    font-size: 40px;
+    font-weight: normal;
+     text-align: center;
+     font-family: 'Righteous';
+  
+}
+.projet h2 span{
+    color: #1CB698;
+   
+}
+.projet .coloumn{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+     /* flex-direction: column;  */
+}
+.projet  .container{
+     background: #6d6a6a;  
+    display: flex;
+     justify-content: center; 
+    align-items: center;  
+    height: 30vh;
+    width: 45%;
+    /* opacity: 0.7; */
+    /* margin-left:; */
+    /* padding:0 5%; */
+    border-radius: 40px;
+
+    
+}
+.projet .container .descri{
+     width: 80%;
+     padding: 1% 0;
+     margin: 2.5%;
+     height: 80%;
+     
+}
+.projet  .container .descri h3{
+padding-bottom: 10px;
+color:#1CB698;
+text-transform: uppercase;
+}
+.projet  .container .descri h4{
+color: #fff;
+padding-bottom: 8px;
+text-transform: uppercase;
+
+}.projet  .container .descri P{
+    line-height: 23px;
+    font-size: 15px;
+    color: #000; 
+}
+.projet .container .img{
+    width: 50%;
+    margin-top: 4px;
+   
+
+}
+.projet  .container .img img{
+    display: block;
+    border: 2px solid #FFF;
+   height: 145px;
+    background-size:cover;
+ background-position: center;
+}
+/* Foooter */
+footer{
+    width: 100%;
+    height: 50%;
+    background-color:#3c6382;
+  }
+  .fot{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-direction: column; */
+    margin-left: 6%;
+    text-align: center;
+   
+  }
+  
+  .lef{
+   padding-top: 20px;
+   padding-bottom: 30px;
+   margin-right: 12%;
+  }
+  .reg{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-right: 35%;
+  }
+  .lef  h3{
+    text-decoration-line: underline;
+    color: white;
+  }
+  .lef  h3:hover{
+    color: #1CB698;
+  }
+  .reg  h3{
+    text-decoration-line: underline;
+    color: white;
+  }
+  .reg h3:hover{
+    color: #1CB698;
+  }
+
+    footer .fot2  .icons a{
+        /* margin-top: 10px; */
+        color: #fff;
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid #fff;
+        border-radius:10% ;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin: 10px 5px;
+        transition:.3s ;
+        }
+        footer .fot2  .icons a:hover{
+            background-color: #1CB698;
+        }
+ 
+
+  .fot2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-right: 8%; */
+  }
+  .ser{
+    padding-right: 12%;
+    /* padding-bottom: 30px; */
+    
+  }
+  .email{
+    padding: 7px 80px  5px 15px;
+  }
+  .sub{
+    border: none;
+    padding: 9px 50px 7px 30px;
+    background: #000;
+    color: white;
+    margin-right: 12px;
+
+  }
+  .cop{
+    width: 100%;
+    background: #1e2326;
+    text-align: center;
+    height: 35px;
+    padding: 12px;
+    font-size: 12px;
+    color: #1CB698;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+
