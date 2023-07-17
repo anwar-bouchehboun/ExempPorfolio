@@ -64,7 +64,8 @@ ul li a.active,nav ul li a:hover{
 /*Section Inforamation Etudient */
 .info{
     background: linear-gradient(to top,rgba(111, 115, 117, 0.8),rgba(30,35,38,1)),
-    url(/img/photo.jpg);
+    url(/photo.jpg);
+    background-position: center;
     background-size: cover;
     height: 100vh;
     color: #fff;
